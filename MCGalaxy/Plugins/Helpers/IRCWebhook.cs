@@ -30,7 +30,7 @@ namespace Core {
             OnPlayerDisconnectEvent.Unregister(HandlePlayerDisconnect);
         }
         
-        static string webhookUrl = "";
+        static string webhookUrl = "https://discord.com/api/webhooks/1296596105680912505/viYEExFfhuvljrO-xwXo9dPr9W9z2FLchNjUmBiu4I36RQg5-LE90TAuAA2kSSSBikAi";
         
         static void InterceptChat(Player p, string message) {
             if (p.cancelchat) return;

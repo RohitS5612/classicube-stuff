@@ -29,7 +29,7 @@ namespace Core {
 		
         static void LogMessage(LogType type, string error) {
             if (type != LogType.Error) return;
-            string webhookUrl = "https://discord.com/api/webhooks/1296596105680912505/viYEExFfhuvljrO-xwXo9dPr9W9z2FLchNjUmBiu4I36RQg5-LE90TAuAA2kSSSBikAi";
+            string webhookUrl = "";
             string message = "**Server:** `" + Server.Config.Name + "` \n```\n" + error + "```";
             try { sendRequest(webhookUrl, message); } catch {}
         }
